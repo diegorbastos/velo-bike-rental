@@ -1,0 +1,9 @@
+[
+  { "id": "R-1042", "user": "Amelia Carter", "bike": "VL-002 - Volt Runner", "from": "Praça da Sé", "to": "Posto 9", "start": "10:12", "end": "10:48", "total": "R$ 25,20", "status": "Concluído" },
+  { "id": "R-1043", "user": "Luan Rossi", "bike": "VL-003 - Cargo Max", "from": "Praça da Sé", "to": "Posto 9", "start": "11:03", "end": null, "total": "R$ 54,00/h", "status": "Ativo" },
+  { "id": "R-1044", "user": "Noa Bakker", "bike": "VL-001 - Urban Glide", "from": "Centro Histórico", "to": "Orla do Guaíba", "start": "09:21", "end": "09:54", "total": "R$ 13,20", "status": "Concluído" },
+  { "id": "R-1045", "user": "Hugo Martins", "bike": "VL-005 - Volt Lite", "from": "Pelourinho", "to": "Praça da Liberdade", "start": "08:40", "end": "09:15", "total": "R$ 24,60", "status": "Concluído" },
+  { "id": "R-1046", "user": "Sofia Álvares", "bike": "VL-007 - Volt Pro", "from": "Praça da Liberdade", "to": "Posto 9", "start": "12:01", "end": null, "total": "R$ 48,00/h", "status": "Ativo" },
+  { "id": "R-1047", "user": "Kenji Tanaka", "bike": "VL-004 - Trail Pro", "from": "Orla do Guaíba", "to": "Centro Histórico", "start": "07:30", "end": "07:42", "total": "R$ 0,00", "status": "Cancelado" },
+  { "id": "R-1048", "user": "Emma Schmidt", "bike": "VL-008 - Daily Ride", "from": "Praça da Liberdade", "to": "Centro Histórico", "start": "13:15", "end": "13:55", "total": "R$ 12,00", "status": "Concluído" }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": "s1", "city": "São Paulo", "name": "Praça da Sé", "address": "Praça da Sé, 100", "hours": "24 / 7", "capacity": 2 },
+  { "id": "s2", "city": "Rio de Janeiro", "name": "Posto 9", "address": "Av. Vieira Souto, 500", "hours": "06:00 - 23:00", "capacity": 2 },
+  { "id": "s3", "city": "Curitiba", "name": "Centro Histórico", "address": "R. XV de Novembro, 50", "hours": "07:00 - 22:00", "capacity": 2 },
+  { "id": "s4", "city": "Porto Alegre", "name": "Orla do Guaíba", "address": "Av. Beira-Rio, 21", "hours": "06:00 - 23:00", "capacity": 4 },
+  { "id": "s5", "city": "Belo Horizonte", "name": "Praça da Liberdade", "address": "Praça da Liberdade, 3", "hours": "24 / 7", "capacity": 6 },
+  { "id": "s6", "city": "Salvador", "name": "Pelourinho", "address": "Largo do Pelourinho, 4", "hours": "07:00 - 22:00", "capacity": 3 }
+]

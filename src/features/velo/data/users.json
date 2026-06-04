@@ -1,0 +1,5 @@
+[
+  { "initials": "TH", "city": "São Paulo", "name": "Thiago Holanda", "rating": 5.0, "rents": 210, "comment": "A frota elétrica é impecável. Retirei na Paulista e devolvi na Oscar Freire sem fila." },
+  { "initials": "AB", "city": "Rio de Janeiro", "name": "Ana Bittencourt", "rating": 4.9, "rents": 87, "comment": "Pedalei pela orla de Ipanema ao pôr do sol. Experiência inesquecível e bikes muito bem cuidadas." },
+  { "initials": "MF", "city": "Salvador", "name": "Mateus Ferreira", "rating": 4.8, "rents": 142, "comment": "Ótimo preço e estações bem localizadas. Uso toda semana para ir ao trabalho no Centro Histórico." }
+]

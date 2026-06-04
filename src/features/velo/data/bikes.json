@@ -1,0 +1,14 @@
+[
+  { "id": "1", "name": "Meridian C1", "category": "Urbana", "price": "R$24/h", "image": "bike-city", "available": true, "isNew": true },
+  { "id": "2", "name": "Meridian C2", "category": "Urbana", "price": "R$24/h", "image": "bike-city", "available": true, "isNew": false },
+  { "id": "3", "name": "Volt E1", "category": "Elétrica", "price": "R$48/h", "image": "bike-electric", "available": true, "isNew": true },
+  { "id": "4", "name": "Volt E2", "category": "Elétrica", "price": "R$48/h", "image": "bike-electric", "available": false, "isNew": false },
+  { "id": "5", "name": "Volt E3", "category": "Elétrica", "price": "R$48/h", "image": "bike-electric", "available": true, "isNew": false },
+  { "id": "6", "name": "Ridge M1", "category": "Mountain", "price": "R$36/h", "image": "bike-mountain", "available": true, "isNew": false },
+  { "id": "7", "name": "Ridge M2", "category": "Mountain", "price": "R$36/h", "image": "bike-mountain", "available": true, "isNew": false },
+  { "id": "8", "name": "Ridge M3", "category": "Mountain", "price": "R$36/h", "image": "bike-mountain", "available": true, "isNew": true },
+  { "id": "9", "name": "Aero R1", "category": "Speed", "price": "R$42/h", "image": "velo-hero", "available": true, "isNew": false },
+  { "id": "10", "name": "Aero R2", "category": "Speed", "price": "R$42/h", "image": "velo-hero", "available": true, "isNew": false },
+  { "id": "11", "name": "Meridian C3", "category": "Urbana", "price": "R$24/h", "image": "bike-city", "available": true, "isNew": false },
+  { "id": "12", "name": "Ridge M4", "category": "Mountain", "price": "R$36/h", "image": "bike-mountain", "available": false, "isNew": false }
+]
