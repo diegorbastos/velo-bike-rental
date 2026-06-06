@@ -3,7 +3,6 @@ import Header from "@/features/velo/components/Header.jsx";
 import Footer from "@/features/velo/components/Footer.jsx";
 import Stars from "@/features/velo/components/Stars.jsx";
 import heroBike from "@/features/velo/assets/velo-hero.jpg";
-import stationImg from "@/features/velo/assets/station.jpg";
 import riderImg from "@/features/velo/assets/rider.jpg";
 import { getImage } from "@/features/velo/data/images.js";
 import useBikes from "@/features/velo/hooks/useBikes.js";
@@ -92,7 +91,7 @@ const Home = () => {
             <Link to="/stations" className="group block">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src={stationImg}
+                  src={getImage("pelourinho")}
                   alt="Bikes em uma estação"
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"

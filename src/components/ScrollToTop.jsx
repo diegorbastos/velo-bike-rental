@@ -1,4 +1,4 @@
-// Componente utilitário: rola a página ao topo a cada troca de rota
+// rola pra cima a pagina a cada troca de rota
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 

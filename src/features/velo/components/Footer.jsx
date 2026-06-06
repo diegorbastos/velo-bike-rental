@@ -16,10 +16,6 @@ const Footer = () => {
             <h3 className="mb-5 text-sm font-light text-foreground">Pedale</h3>
             <ul className="space-y-3 text-sm font-light text-muted-foreground">
               <li><Link to="/bikes" className="transition-colors hover:text-foreground">Todas as bikes</Link></li>
-              <li>Urbana</li>
-              <li>Elétrica</li>
-              <li>Mountain</li>
-              <li>Speed</li>
             </ul>
           </section>
 
