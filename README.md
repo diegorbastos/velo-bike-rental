@@ -15,7 +15,6 @@ src/
       components/       # layout e componentes da feature
       data/             # JSONs e mapa de imagens
       pages/            # páginas do domínio VELO
-  hooks/
   lib/
   pages/
     NotFound.jsx

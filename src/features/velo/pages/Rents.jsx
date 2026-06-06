@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Pencil, Trash2, Plus } from "lucide-react";
 import Header from "@/features/velo/components/Header.jsx";
 import Footer from "@/features/velo/components/Footer.jsx";
+import useBikes from "@/features/velo/hooks/useBikes.js";
 import useRents from "@/features/velo/hooks/useRents.js";
 import useStations from "@/features/velo/hooks/useStations.js";
 import { Badge } from "@/components/ui/badge";
@@ -49,6 +50,7 @@ const emptyRent = {
 };
 
 const Rents = () => {
+  const [bikes] = useBikes();
   const [rents, setRents] = useRents();
   const [stations] = useStations();
   const [open, setOpen] = useState(false);
@@ -57,6 +59,7 @@ const Rents = () => {
   const [error, setError] = useState("");
 
   const stationOptions = stations.map((station) => station.name);
+  const bikeOptions = bikes.map((bike) => bike.name);
   const availability = useMemo(
     () => getStationAvailability(stations, rents, editing?.id),
     [editing?.id, rents, stations],
@@ -68,6 +71,7 @@ const Rents = () => {
     setForm({
       ...emptyRent,
       id: `R-${Math.floor(1000 + Math.random() * 9000)}`,
+      bike: bikeOptions[0] ?? "",
       from: stationOptions[0] ?? "",
       to: stationOptions[1] ?? stationOptions[0] ?? "",
     });
@@ -223,8 +227,19 @@ const Rents = () => {
                 <Input id="user" value={form.user} onChange={(e) => setForm({ ...form, user: e.target.value })} />
               </div>
               <div className="col-span-2">
-                <Label htmlFor="bike">Bike</Label>
-                <Input id="bike" value={form.bike} onChange={(e) => setForm({ ...form, bike: e.target.value })} />
+                <Label>Bike</Label>
+                <Select value={form.bike} onValueChange={(value) => setForm({ ...form, bike: value })}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Selecione uma bike" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {bikeOptions.map((bike) => (
+                      <SelectItem key={bike} value={bike}>
+                        {bike}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </div>
               <div>
                 <Label>De</Label>

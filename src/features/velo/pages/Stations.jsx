@@ -5,7 +5,7 @@ import Header from "@/features/velo/components/Header.jsx";
 import Footer from "@/features/velo/components/Footer.jsx";
 import useRents from "@/features/velo/hooks/useRents.js";
 import useStations from "@/features/velo/hooks/useStations.js";
-import { getImage } from "@/features/velo/data/images.js";
+import { getImage, getStationImageKey } from "@/features/velo/data/images.js";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -31,7 +31,7 @@ const StationCard = ({ station }) => (
   <div className="group cursor-pointer">
     <div className="aspect-[4/3] overflow-hidden">
       <img
-        src={getImage("station")}
+        src={getImage(getStationImageKey(station.name))}
         alt={`${station.name} em ${station.city}`}
         loading="lazy"
         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
