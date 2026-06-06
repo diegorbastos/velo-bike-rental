@@ -3,7 +3,7 @@ import { Pencil, Trash2, Plus } from "lucide-react";
 import Header from "@/features/velo/components/Header.jsx";
 import Footer from "@/features/velo/components/Footer.jsx";
 import useRents from "@/features/velo/hooks/useRents.js";
-import stationsData from "@/features/velo/data/stations.json";
+import useStations from "@/features/velo/hooks/useStations.js";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -50,15 +50,16 @@ const emptyRent = {
 
 const Rents = () => {
   const [rents, setRents] = useRents();
+  const [stations] = useStations();
   const [open, setOpen] = useState(false);
   const [editing, setEditing] = useState(null);
   const [form, setForm] = useState(emptyRent);
   const [error, setError] = useState("");
 
-  const stationOptions = stationsData.map((station) => station.name);
+  const stationOptions = stations.map((station) => station.name);
   const availability = useMemo(
-    () => getStationAvailability(stationsData, rents, editing?.id),
-    [editing?.id, rents],
+    () => getStationAvailability(stations, rents, editing?.id),
+    [editing?.id, rents, stations],
   );
 
   const openCreate = () => {

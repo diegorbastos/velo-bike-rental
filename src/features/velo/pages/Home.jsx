@@ -5,13 +5,15 @@ import Stars from "@/features/velo/components/Stars.jsx";
 import heroBike from "@/features/velo/assets/velo-hero.jpg";
 import stationImg from "@/features/velo/assets/station.jpg";
 import riderImg from "@/features/velo/assets/rider.jpg";
-import bikesData from "@/features/velo/data/bikes.json";
-import usersData from "@/features/velo/data/users.json";
 import { getImage } from "@/features/velo/data/images.js";
+import useBikes from "@/features/velo/hooks/useBikes.js";
+import useUsers from "@/features/velo/hooks/useUsers.js";
 
 const Home = () => {
-  const featured = bikesData.slice(0, 4);
-  const topRenters = usersData.slice(0, 3);
+  const [bikes] = useBikes();
+  const [users] = useUsers();
+  const featured = bikes.slice(0, 4);
+  const topRenters = users.slice(0, 3);
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
