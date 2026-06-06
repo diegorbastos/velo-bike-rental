@@ -7,6 +7,7 @@ import { componentTagger } from "lovable-tagger";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? "/velo-bike-rental/" : "/",
   server: {
     host: "::",
     port: 8080,
